@@ -23,7 +23,8 @@ function luhnSum(numbers) {
 
 /**
  * Validates a credit card number using luhns algorithm
- * @param @param {Array<Number>} numbers - array of numbers representing a credit card number
+ * @param {Array<Number>} numbers - array of numbers representing a credit card number
+ * @returns {Boolean} returns true if number is valid according to luhns algorithm
  */
 function validCreditCard(numbers) {
   return luhnSum(numbers) % 10 === 0;
